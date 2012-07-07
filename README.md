@@ -1,4 +1,4 @@
 gar-badge
 =========
 
-Just some garbage
+This is the working readme file for this garbage
