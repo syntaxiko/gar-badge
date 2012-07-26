@@ -17,3 +17,39 @@
     Tomorrow Was the Day to Begin
 
 '''
+def test1():
+    dOne = {
+        'key':'value',
+        'key2':'value'
+        }
+    
+    dTwo = dOne.copy()
+    
+    print dOne == dTwo
+    
+    dOne.clear()
+    print dOne
+    
+    print dOne.clear()
+    print type(dOne.clear())
+
+class AnyClass(object):
+    '''Class docstring'''
+    
+    def __init__(self,arg1,arg2):
+        '''method docstring'''
+        self.arg1 = arg1
+        self.arg2 = arg2
+        
+    def printargs(self):
+        '''method docstring'''
+        print self.arg1
+        print self.arg2
+
+def main():
+    test1()
+    instance = AnyClass('string1','string2')
+    instance.printargs()
+    
+
+main()
